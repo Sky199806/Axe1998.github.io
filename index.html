@@ -22,7 +22,7 @@
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://axe1998.top/images/avatar.png?v=1606397975679" class="avatar">
+            <img src="https://axe1998.top/images/avatar.png?v=1606398526586" class="avatar">
         </div>
         <div class="sitename">Axe&#39;s blog</div>
         <span class="describtion" data-text='["Run"]'>&nbsp;</span>
@@ -86,11 +86,55 @@
     <div id="footinfo"> | Theme: <a
         href="https://github.com/850552586/gridea-theme-fog">Fog</a></div>
     
+    <div class="sitetime"><div id="sitegotimeDate">载入天数...</div>
+    <div id="sitegotimes">载入时分秒...</div></div>
+    <div id="cussitetime" style="display:none">02/02/2020</div>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/busuanzi.pure.mini.js"></script>
+    <div id="vistornum">
+        <span id="busuanzi_container_site_uv">
+            <i class="fa fa-heart" aria-hidden="true" style="color: red;"></i> 总访问量:<span id="busuanzi_value_site_pv"></span>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-user-o" aria-hidden="true"></i> 访问人数:<span id="busuanzi_value_site_uv"></span>
+        </span>
+    </div>
+    <div style="color:white">Copyright © 2020  备案号: 鄂ICP备...号</div>
     
     </div>
 
 
 <script src="https://axe1998.top/media/js/wordshow.js"></script>
+    
+    <script>
+        //----------------------站点运行时间
+        var now = new Date();
+
+        function createtime() {
+            var sitegotime = document.getElementById("cussitetime").innerHTML + " 00:00:00";
+            var grt = new Date(sitegotime); //此处修改你的建站时间或者网站上线时间
+            now.setTime(now.getTime() + 250);
+            days = (now - grt) / 1000 / 60 / 60 / 24;
+            dnum = Math.floor(days);
+            hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+            hnum = Math.floor(hours);
+            if (String(hnum).length == 1) {
+                hnum = "0" + hnum;
+            }
+            minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+            mnum = Math.floor(minutes);
+            if (String(mnum).length == 1) {
+                mnum = "0" + mnum;
+            }
+            seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+            snum = Math.round(seconds);
+            if (String(snum).length == 1) {
+                snum = "0" + snum;
+            }
+            document.getElementById("sitegotimeDate").innerHTML = "本站已安全运行 " + dnum + " 天 ";
+            document.getElementById("sitegotimes").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+        }
+        setInterval("createtime()", 250);
+    </script>
     
 
 
@@ -322,10 +366,10 @@
     </div>
     <div id="bg">
     </div>
-    <div id="bgchoice" style="display: none">
+    <div id="bgchoice" style="display: none">link
     </div>
             
-            <div id="bgurl" style="display:none"></div>
+            <div id="bgurl" style="display:none">https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1606407714924&amp;di=0c283902c1c2887a197b868bfe01009b&amp;imgtype=0&amp;src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201306%2F22%2F220606jdx8bd3yw7dk8lpj.jpg</div>
              
 
     <!-- 响应式布局，针对手机端内容显示 -->
@@ -447,7 +491,7 @@
             <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://axe1998.top/images/avatar.png?v=1606397975679" class="avatar">
+        <img src="https://axe1998.top/images/avatar.png?v=1606398526586" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
