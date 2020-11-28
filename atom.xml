@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://axe1998.top</id>
     <title>Axe&apos;s blog</title>
-    <updated>2020-11-28T11:14:09.083Z</updated>
+    <updated>2020-11-28T13:41:14.592Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://axe1998.top"/>
     <link rel="self" href="https://axe1998.top/atom.xml"/>
@@ -11,26 +11,48 @@
     <icon>https://axe1998.top/favicon.ico</icon>
     <rights>All rights reserved 2020, Axe&apos;s blog</rights>
     <entry>
-        <title type="html"><![CDATA[关于]]></title>
-        <id>https://axe1998.top/post/about/</id>
-        <link href="https://axe1998.top/post/about/">
+        <title type="html"><![CDATA[用Github Page+Gridea搭建个人博客]]></title>
+        <id>https://axe1998.top/post/yong-github-pagegridea-da-jian-ge-ren-bo-ke/</id>
+        <link href="https://axe1998.top/post/yong-github-pagegridea-da-jian-ge-ren-bo-ke/">
         </link>
-        <updated>2019-01-25T11:09:48.000Z</updated>
-        <content type="html"><![CDATA[<blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<pre><code>  好不容易搭好了，写点技术总结，代码笔记
-</code></pre>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<pre><code>  Axe 
-</code></pre>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<pre><code>  Running
-</code></pre>
-<h2 id="联系我呀">📬 联系我呀</h2>
-<pre><code>  QQ：771286048
-</code></pre>
+        <updated>2020-11-28T13:28:54.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="前言"><strong>前言</strong></h2>
+<p>   第一次更博，自然是要先废话一通。<br>
+  我打小就是个很跳脱的人，这个形容词具体表现在不爱记笔记，做题跳步骤，不会去整理东西，对细节压根不care等等。我也是个很爱做白日梦的人，常常大脑里有无数个奇思妙想，但甚至连用笔写几个关键词的动作都没有。如果这个世界上有一种职业叫做“空想家”，那一定是特别适合我了。不过随着经历的丰富，阅历的增长，性格也慢慢有了转变。虽然我仍然抗拒在学习自然学科的时候整理出厚厚一摞感动自己的笔记，但也逐渐开始改变以前的习惯，更博什么的相较于看代码还是舒服多了，不是么。<br>
+  于是终于下定决心要写点什么了，自开学打算转码以来，两个多月接触了很多信息，看过不少优秀的博客和公众号文章，也对自己写博客这件事跃跃欲试。<br>
+​  写博的具体理由嘛，一来是把学习路上的东西进行总结，方便以后查阅；二来是想养成一个好习惯，有些知识看了一遍，能留在脑子里的内容很少，通过写博这种方式来让自己大脑里建立起一个知识框架，锻炼一下思维能力。三是自小语言能力不错，但是简练性却一直为人诟病，说白了就是容易有一堆废话，通过写作让自己的语言表达能够变得更加凝练，一针见血，便是小小的目标了。四是在若干年后能有机会回来咀嚼当年的青涩文字，也是人生的一大乐趣了，今天看了莉莉丝CEO王信文早些年在博客里写道“自己若干年后可能会变牛逼，对自己变牛逼这事儿还是很期待”，希望以后的自己就算做不到业界牛逼，也可以成为一个脱颖而出的人。<br>
+​  第一篇记录一下这两天折腾的经历，中间走了一些弯路，但是总体还算有些收获。</p>
+<h2 id="一-github-pages-创建"><strong>一、Github Pages 创建</strong></h2>
+<p>​登录Github后创建一个新仓库，命名格式按username.github.io，这个仓库被用来存放博客页面的所有资源，之后会采用一个名为Gridea的博客管理工具，这个工具会将你做出的改动，上传的文章同步至刚才建立的仓库，博客页面的所有资源都是从仓库中读取。</p>
+<p>​打开仓库的<strong>Setting</strong></p>
+<figure data-type="image" tabindex="1"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128202055448.png" alt="image-20201128202055448" loading="lazy"></figure>
+<p>下滚到<strong>Github Pages</strong>界面，点击 <strong>Choose a theme</strong> 随意选择一个主题。因为后续我们使用 Gridea 设置主题，这边选择主题只是为了开启 GitHub Pages 可访问类型。根据提示完成创建后就拥有了一个属于自己的域名，以github.io结尾，但是由于这个域名比较长比较难记，且不具有个性化，我们可以自己购买一个域名与其进行绑定。</p>
+<h2 id="二-自定义域名"><strong>二、自定义域名</strong></h2>
+<p>域名顾名思义就是互联网世界中的一个名字，我们上网的本质是访问目标服务器的IP地址从而获取想要的信息，常使用的IPv4地址例如192.168.1.1是可以映射到多个域名上的，通过DNS服务器将这种映射关系得以实现。域名的价值就在于方便人们理解和记忆，我在阿里<a href="https://wanwang.aliyun.com/?spm=5176.19720258.J_8058803260.1119.e9392c4a77883v">万网</a>注册购买域名。</p>
+<figure data-type="image" tabindex="2"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128204247438.png" alt="image-20201128204247438" loading="lazy"></figure>
+<p>个人博客后缀可以选择使用.top，首年只需要花费五块钱，然后便是常规的购买操作，一系列的实名认证，认证速度也够快。购买成功后会对域名进行签名证书等流程，通过后就可以对其进行解析，用来绑定到自己的目标IP上。</p>
+<figure data-type="image" tabindex="3"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128204656419.png" alt="image-20201128204656419" loading="lazy"></figure>
+<p>​点击解析然后添加记录，这里参考了这个<a href="https://www.zhihu.com/question/31377141/answer/103056861">知乎回答</a>，完成后访问你的个性化域名就可以直接跳转到Github Page界面。</p>
+<p>##** 三、Gridea**</p>
+<p>Gridea是一个很人性化并且操作简单（划重点）的可以对个人博客进行管理的工具，支持Github Pages，Coding Pages，SFTP。其中Coding Pages是国内的托管平台，腾讯云代理，速度应该比Github快很多，但是折腾的过程中怎么也连接不上，遂放弃。</p>
+<p>Gridea配置界面十分简单，按如下样式即可</p>
+<figure data-type="image" tabindex="4"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128205716921.png" alt="image-20201128205716921" loading="lazy"></figure>
+<p>域名填写绑定好的个人域名或是Github Pages域名</p>
+<p>仓库名称填写你在Github上建立的用来管理blog的仓库名</p>
+<p>​分支注意一定填写<strong>自己Github Pages所在的分支</strong>，例如我是gh-pages，很多教程都是填的master</p>
+<p>​用户名填写Github用户名</p>
+<p>令牌需要从Github中获取，可以理解为对其中代码仓库进行读写管理的通行证，具体可以参考<a href="https://zhuanlan.zhihu.com/p/71681116">回答</a></p>
+<p>CNAME填写绑定的域名，没有可以不填</p>
+<p>配置好后点击保存，再点击<strong>检测远程连接</strong>，出现连接成功即可，再访问个人博客会发现出现了一些Gridea自带的基本样式。可以在Gridea中进行个性化设置，上传文章，修改主题等等，操作都很简洁直观。每次改动后需要点击左下角的同步，并且可以进行预览。</p>
+<p>​这里要吹一波Ericam大佬写的fog主题，实在是太太太好看了，附上<a href="https://github.com/850552586/gridea-theme-fog">链接</a></p>
+<h2 id="四-腾讯云图床"><strong>四、腾讯云图床</strong></h2>
+<p>​由于国内访问gh-page较慢，将blog里的图片用外链的形式加载出来。用腾讯云的标准存储桶存放图片。</p>
+<figure data-type="image" tabindex="5"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128211301105.png" alt="image-20201128211301105" loading="lazy"></figure>
+<p>​本地建立一个放博客图片的文件夹，写完一篇后将整个文件夹上传到腾讯云上，只需要用ctrl + H修改MarkDown里的图片地址，就可以实现外链加载，实测页面打开速度快了不少。</p>
+<h2 id="五-小插曲"><strong>五、小插曲</strong></h2>
+<p>​前两天忙着搭博客的时候一直遇到内存泄露的情况，16g的内存，主要程序chrome占了3个g，但是整体占用居然高达百分之七十，并且伴随时间流逝逐渐占满。</p>
+<p>打开任务管理器检查一下内存占用情况，发现一个叫dwm.exe的进程占用了十多个g，解决方法是在电源选项里禁用开机快速启动。</p>
+<figure data-type="image" tabindex="6"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128211945753.png" alt="image-20201128211945753" loading="lazy"></figure>
 ]]></content>
     </entry>
 </feed>
