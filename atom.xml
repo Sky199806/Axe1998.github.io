@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://axe1998.top</id>
     <title>Axe&apos;s blog</title>
-    <updated>2020-11-28T13:41:14.592Z</updated>
+    <updated>2020-11-28T13:46:32.811Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://axe1998.top"/>
     <link rel="self" href="https://axe1998.top/atom.xml"/>
@@ -33,7 +33,7 @@
 <p>个人博客后缀可以选择使用.top，首年只需要花费五块钱，然后便是常规的购买操作，一系列的实名认证，认证速度也够快。购买成功后会对域名进行签名证书等流程，通过后就可以对其进行解析，用来绑定到自己的目标IP上。</p>
 <figure data-type="image" tabindex="3"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128204656419.png" alt="image-20201128204656419" loading="lazy"></figure>
 <p>​点击解析然后添加记录，这里参考了这个<a href="https://www.zhihu.com/question/31377141/answer/103056861">知乎回答</a>，完成后访问你的个性化域名就可以直接跳转到Github Page界面。</p>
-<p>##** 三、Gridea**</p>
+<h2 id="三-gridea"><strong>三、Gridea</strong></h2>
 <p>Gridea是一个很人性化并且操作简单（划重点）的可以对个人博客进行管理的工具，支持Github Pages，Coding Pages，SFTP。其中Coding Pages是国内的托管平台，腾讯云代理，速度应该比Github快很多，但是折腾的过程中怎么也连接不上，遂放弃。</p>
 <p>Gridea配置界面十分简单，按如下样式即可</p>
 <figure data-type="image" tabindex="4"><img src="https://pages-1304345814.cos.ap-nanjing.myqcloud.com/%E7%94%A8Github%20Page%2BGridea%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20201128205716921.png" alt="image-20201128205716921" loading="lazy"></figure>
